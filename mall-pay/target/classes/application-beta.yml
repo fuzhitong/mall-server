@@ -1,0 +1,16 @@
+dfs:
+  url: 192.168.0.128:8181
+
+wx:
+  appId: wx59a7e2633f445ef7
+  mchId: 1534472621
+  key: 61vVGojsSJ1BitNdagaysOthKVSZ3uLs
+  certPath:
+  notify_url: http://thesunbig.imwork.net/wx/notify
+  wap_url: https://pay.qq.com
+  spbill_create_ip: 127.0.0.1
+  
+zookeeper:
+  url: zookeeper://192.168.0.128:2181 #114.115.171.119
+
+

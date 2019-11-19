@@ -1,0 +1,11 @@
+dubbo:
+  name: mall-pay-service
+  port: 20887
+server:
+  port: 8188
+spring:
+  profiles:
+    active: dev
+goods:
+  pic:
+    domain: http://demo5.tp-shop.cn

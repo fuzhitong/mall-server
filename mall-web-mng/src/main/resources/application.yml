@@ -1,0 +1,9 @@
+server:
+    context-path: /mall-mng
+    port: 8185
+spring:
+  profiles:
+    active: dev
+dubbo:
+  name: mall-web-mng
+  port: 20886

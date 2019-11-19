@@ -1,0 +1,9 @@
+server:
+    context-path: /mall
+    port: 8186
+spring:
+  profiles:
+    active: dev
+dubbo:
+  name: mall-web-order
+  port: 20885

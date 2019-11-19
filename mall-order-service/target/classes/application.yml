@@ -1,0 +1,11 @@
+dubbo:
+  name: mall-order-service
+  port: 20883
+server:
+  port: 8182
+spring:
+  profiles:
+    active: dev
+goods:
+  pic:
+    domain: http://demo5.tp-shop.cn

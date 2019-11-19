@@ -1,0 +1,11 @@
+dubbo:
+  name: mall-product-service
+  port: 20884
+server:
+  port: 8183
+spring:
+  profiles:
+    active: dev
+goods:
+      pic:
+        domain: http://demo5.tp-shop.cn

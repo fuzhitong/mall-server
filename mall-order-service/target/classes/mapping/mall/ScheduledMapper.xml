@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.enjoy.mall.dao.ScheduledMapper">
+    <resultMap id="BaseResultMap" type="cn.enjoy.mall.model.HotSellingGoods">
+        <id column="goods_id" jdbcType="INTEGER" property="goodsId" />
+        <result column="sales_sum" jdbcType="INTEGER" property="salesSum" />
+    </resultMap>
+    <delete id="deleteByAll" >
+        delete from tp_goods_hotsell
+    </delete>
+    <insert id="insert" parameterType="cn.enjoy.mall.model.HotSellingGoods"  keyProperty="goods_id">
+        insert into tp_goods_hotsell (goods_id, sales_sum)
+        values (#{goodsId,jdbcType=INTEGER}, #{salesSum,jdbcType=INTEGER})
+    </insert>
+  <select id="hotProduct"  resultMap="BaseResultMap">
+   select * from (
+        select a.goods_id,sum(a.sales_sum)  as sales_sum from(
+        SELECT
+                og.goods_id,
+                count(1) sales_sum
+                FROM
+                    tp_order_goods og
+                INNER JOIN tp_goods tg on tg.goods_id = og.goods_id
+                INNER JOIN tp_goods_type  gt on gt.id =  tg.goods_type
+                INNER JOIN tp_order o ON og.order_id = o.order_id
+                INNER JOIN tp_spec_goods_price  sgp on sgp.goods_id =  tg.goods_id and sgp.id = spec_goods_id
+                WHERE
+                    o.order_status IN (1, 2, 4)
+                    and from_unixtime(o.confirm_time,'%Y-%m-%d') is not null
+                GROUP BY
+                    o.confirm_time,goods_Id,spec_goods_id
+        ) a GROUP BY a.goods_id ) b order by b.sales_sum desc LIMIT #{count,jdbcType=INTEGER}
+  </select>
+
+    <select id="getInvalidKill"  resultType="int">
+        SELECT id FROM tp_kill_goods_price t WHERE t.end_time &lt; SYSDATE() AND t.status = 1
+    </select>
+
+    <update id="disableKill" parameterType="list">
+        UPDATE  tp_kill_goods_price set status = 2 WHERE id IN
+        <foreach collection="list" item="item" open="(" close=")" separator=",">
+            #{item}
+        </foreach>
+    </update>
+
+    <update id="cancelKillOrder" parameterType="list">
+        UPDATE tp_order SET order_status = 3 WHERE o.order_id IN (
+            SELECT t.order_id FROM tp_order_goods t WHERE t.prom_type = 1 AND t.prom_id IN
+            <foreach collection="list" item="item" open="(" close=")" separator=",">
+                #{item}
+            </foreach>
+        )
+    </update>
+</mapper>

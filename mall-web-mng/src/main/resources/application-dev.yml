@@ -1,0 +1,39 @@
+dfs:
+  url: 192.168.244.10:8181
+fdfs:
+    connectTimeout: 600
+    soTimeout: 1500
+    thumbImage:
+        height: 150
+        width: 150
+    trackerList:
+    - 192.168.244.10:12050
+
+zookeeper:
+  url: zookeeper://192.168.244.10:2181
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  redis:
+    host: 192.168.244.10
+    port: 6379
+    password: 123456
+  jmx:
+    enabled: false
+shiro:
+  maxAge:
+    day: 10
+company:
+  images:
+    login-logo:
+    logo:
+    login-bg:
+wx:
+    appid: wxc5eae5bf209e986f
+    appsecret:
+    redirect_uri:
+
+goods:
+  pic:
+    domain: http://demo5.tp-shop.cn

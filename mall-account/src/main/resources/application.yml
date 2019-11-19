@@ -1,0 +1,6 @@
+server:
+  port: 8180
+  context-path: /mall-account
+spring:
+  profiles:
+    active: dev

@@ -1,0 +1,6 @@
+cn\enjoy\mall\mongo\CategoryCountDao.class
+cn\enjoy\mall\mongo\ShoppingCartDao.class
+cn\enjoy\mall\mongo\HotCategoryDao.class
+cn\enjoy\mall\mongo\GoodsDao.class
+cn\enjoy\mall\mongo\BaseMgDao.class
+cn\enjoy\mall\mongo\GoodsCategoryDao.class

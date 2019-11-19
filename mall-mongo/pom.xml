@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>project-parent</artifactId>
+        <groupId>cn.enjoy</groupId>
+        <version>1.0.0</version>
+        <relativePath>../project-parent/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.enjoy</groupId>
+    <artifactId>mall-mongo</artifactId>
+    <version>1.0.0</version>
+
+    <name>mall-mongo</name>
+    <url>http://www.example.com</url>
+
+    <dependencies>
+        <dependency>
+            <groupId>cn.enjoy</groupId>
+            <artifactId>mall-core</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.enjoy</groupId>
+            <artifactId>mall-model</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-mongodb</artifactId>
+            <version>1.10.9.RELEASE</version>
+        </dependency>
+    </dependencies>
+
+</project>

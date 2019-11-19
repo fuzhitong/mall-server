@@ -1,0 +1,51 @@
+dfs:
+  url: 192.168.244.10:8181
+fdfs:
+    connectTimeout: 600
+    soTimeout: 1500
+    thumbImage:
+        height: 150
+        width: 150
+    trackerList:
+    - 192.168.244.10:12050
+
+zookeeper:
+  url: zookeeper://192.168.244.10:2181
+spring:
+  redis:
+    host: 192.168.244.10
+    port: 6379
+    password: 123456
+  jmx:
+    enabled: false
+  rabbitmq:
+    host: 192.168.244.10
+    port: 5672
+    username: admin
+    password: admin
+    publisher-confirms: true
+    virtual-host: /
+shiro:
+  maxAge:
+    day: 10
+sso:
+  loginUrl: /api/system/unLogin
+  client-id: c1ebe466-1cdc-4bd3-ab69-77c3561b9dee
+  client-secret: d8346ea2-6017-43ed-ad68-19c0f971738b
+  access-token-url: http://self.sso.com/mall-account/api/accessToken
+  user-info-url: http://self.sso.com/mall-account/api/userInfo
+  redirect-url: http://self.sso.com/mall-account/
+
+company:
+  images:
+    login-logo: /assets/pc/images/login-logo.png
+    logo: /assets/pc/images/logo.png
+    login-bg: /assets/pc/images/login-bg.jpg
+wx:
+    appid: wxc5eae5bf209e986f
+    appsecret:
+    redirect_uri:
+
+goods:
+  pic:
+    domain: http://demo5.tp-shop.cn
