@@ -44,7 +44,7 @@
         <commons-lang-version>2.6</commons-lang-version>
         <commons-logging-version>1.1</commons-logging-version>
         <commons-net-version>3.3</commons-net-version>
-        <commons-fileupload-version>1.3</commons-fileupload-version>
+        <commons-fileupload-version>1.3.3</commons-fileupload-version>
         <commons-pool-version>1.6</commons-pool-version>
         <c3p0-version>0.9.5.2</c3p0-version>
         <dom4j-version>1.6.1</dom4j-version>
