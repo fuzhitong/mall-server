@@ -37,7 +37,7 @@
         <cas-client-version>3.3.3</cas-client-version>
         <commons-beanutils-version>1.8.3</commons-beanutils-version>
         <commons-codec-version>1.7</commons-codec-version>
-        <commons-collections-version>3.2.1</commons-collections-version>
+        <commons-collections-version>3.2.2</commons-collections-version>
         <commons-httpclient-version>3.1</commons-httpclient-version>
         <commons-configuration-version>1.9</commons-configuration-version>
         <commons-io-version>2.4</commons-io-version>
