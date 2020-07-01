@@ -72,7 +72,7 @@
         <undertow-version>1.0.1.Final</undertow-version>
         <activemq-version>5.9.0</activemq-version>
         <google-collections-version>1.0</google-collections-version>
-        <quartz-version>2.3.0</quartz-version>
+        <quartz-version>2.3.2</quartz-version>
 
         <!-- Common libs -->
         <spring-version>4.3.13.RELEASE</spring-version>
