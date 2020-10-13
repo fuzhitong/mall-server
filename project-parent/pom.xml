@@ -110,7 +110,7 @@
         <slf4j_version>1.7.25</slf4j_version>
         <logback_version>1.0.13</logback_version>
         <!-- Test libs -->
-        <junit_version>4.12</junit_version>
+        <junit_version>4.13.1</junit_version>
         <easymock_version>3.0</easymock_version>
         <jmockit_version>0.999.8</jmockit_version>
         <!-- Build args -->
