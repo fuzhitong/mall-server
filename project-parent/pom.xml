@@ -76,7 +76,7 @@
 
         <!-- Common libs -->
         <spring-version>4.3.13.RELEASE</spring-version>
-        <spring-security-version>3.1.4.RELEASE</spring-security-version>
+        <spring-security-version>5.5.7</spring-security-version>
         <javassist_version>3.22.0-GA</javassist_version>
         <mina_version>1.1.7</mina_version>
         <grizzly_version>2.1.4</grizzly_version>
