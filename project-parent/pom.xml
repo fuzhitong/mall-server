@@ -56,7 +56,7 @@
         <janino-version>2.6.1</janino-version>
         <javax-ws-rs-version>2.0</javax-ws-rs-version>
         <javax-annotation-version>1.2</javax-annotation-version>
-        <jboss-resteasy-version>3.1.4.Final</jboss-resteasy-version>
+        <jboss-resteasy-version>3.14.0.Final</jboss-resteasy-version>
         <jcaptcha-version>1.0-RC6</jcaptcha-version>
         <jdom-version>1.1</jdom-version>
         <jstl-version>1.2</jstl-version>
